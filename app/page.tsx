@@ -1,22 +1,23 @@
 "use client";
-import { motion } from "framer-motion";
+"use client";
+import { motion, Variants } from "framer-motion";
 
 const VIDEO_URL =
   "https://res.cloudinary.com/dxiefklmt/video/upload/v1774101926/Cloud_Oppening_evboyf.mp4";
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.4, 0, 0.2, 1] } },
 };
-const fadeLeft = {
+const fadeLeft: Variants = {
   hidden: { opacity: 0, x: -40 },
   show: { opacity: 1, x: 0, transition: { duration: 0.8, ease: [0.4, 0, 0.2, 1] } },
 };
-const fadeRight = {
+const fadeRight: Variants = {
   hidden: { opacity: 0, x: 40 },
   show: { opacity: 1, x: 0, transition: { duration: 0.8, ease: [0.4, 0, 0.2, 1] } },
 };
-const zoomIn = {
+const zoomIn: Variants = {
   hidden: { opacity: 0, scale: 0.7 },
   show: { opacity: 1, scale: 1, transition: { duration: 0.8, ease: [0.4, 0, 0.2, 1] } },
 };
