@@ -9,6 +9,13 @@ const LOGO_URL =
 export const metadata: Metadata = {
   title: "Dominion Outreach",
   description: "Who will have all men to be saved and to come to the knowledge of the truth.",
+  icons: {
+    icon: [{
+      url: "https://res.cloudinary.com/dxiefklmt/image/upload/w_192,h_192,c_fill,f_png/v1774102552/Dominion_Outreach_ft0cc0.png",
+      type: "image/png",
+      sizes: "192x192",
+    }],
+  },
 };
 
 export const viewport: Viewport = { themeColor: "#0a1928" };
