@@ -16,6 +16,9 @@ export const metadata: Metadata = {
       sizes: "192x192",
     }],
   },
+  verification: {
+    google: "5AHVH-sW_1U9wu-Gs2cGxutI3fgXHlT2AYR8FmdsZvM",
+  },
 };
 
 export const viewport: Viewport = { themeColor: "#0a1928" };
