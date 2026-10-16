@@ -1,12 +1,17 @@
 @import "tailwindcss";
 
 @layer base {
-  html { background: #0a1928; }
+  html {
+    background: #0a1928;
+    overflow-x: hidden;
+    overflow-x: clip;
+  }
   body {
     background: linear-gradient(135deg, #0a1928 0%, #1a2f3f 50%, #0d2b3e 100%);
     color: #f4f6f8;
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     overflow-x: hidden;
+    overflow-x: clip;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   html[data-theme="light"] body {
@@ -140,7 +145,7 @@ html[data-theme="light"] .panel {
 .hero-cta:hover::before { left: 100%; }
 
 /* ===== CONTENT SECTIONS ===== */
-.content-section { padding: 100px 30px; text-align: center; }
+.content-section { padding: 100px 30px; text-align: center; overflow-x: clip; }
 @media (max-width: 768px) { .content-section { padding: 80px 20px; } }
 @media (max-width: 576px) { .content-section { padding: 60px 15px; } }
 
@@ -256,7 +261,7 @@ html[data-theme="light"] .contact-message { color: #2c3e50; }
 .contact-message::after { bottom: -40px; right: 0; transform: rotate(180deg); }
 
 .contact-orb {
-  position: relative; width: 320px; min-height: 380px; border-radius: 35px;
+  position: relative; width: 320px; max-width: 100%; min-height: 380px; border-radius: 35px;
   display: flex; flex-direction: column; align-items: center; padding: 30px 20px;
   transition: all 0.5s cubic-bezier(0.175,0.885,0.32,1.275);
   overflow: hidden; backdrop-filter: blur(10px);
